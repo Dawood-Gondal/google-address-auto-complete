@@ -6,7 +6,7 @@ The extension features address auto-complete for checkout using the Google Place
 - Guest checkout support for entering shipping address
 - Logged in customer entering a new shipping address at checkout
 
-**Note:** The Google Places API offers 150,000 FREE daily lookup requests for users that validate their account and add billing information. If you require more than 150,000 lookup requests daily then you can register to a paid plan. See Usage Tiers & Pricing
+**Note**: The Google Places API offers 150,000 FREE daily lookup requests for users that validate their account and add billing information. If you require more than 150,000 lookup requests daily then you can register to a paid plan. [See Usage Tiers & Pricing](https://developers.google.com/places/web-service/usage#verify_your_identity_by_enabling_billing)
 
 ## Configuration
 
