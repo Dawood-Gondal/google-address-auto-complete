@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_GoogleAddressAutocomplete
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="address.component.layout.processor.plugin" type="M2Commerce\GoogleAddressAutocomplete\Plugin\LayoutProcessorPlugin"/>
+    </type>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="autocomplete.config.provider" xsi:type="object">M2Commerce\GoogleAddressAutocomplete\Model\AutocompleteConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
